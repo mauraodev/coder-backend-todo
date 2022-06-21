@@ -3,7 +3,7 @@ services:
   mongo:
     container_name: mongo
     image: mongo:latest
-    restart: unless-stopped
+    restart: "no"
     hostname: mongo
     volumes:
     - "./data/mongodb:/data"
